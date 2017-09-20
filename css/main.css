@@ -11,36 +11,39 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: 'Roboto', sans-serif;
-  background-color: #f2f2f2;
+  background-color: #333;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-.grid {
-  transform: translateX(-50%);
+body {
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
   top: 50%;
+  left: 50%;
+  width: 100%;
 }
 
 h1, h2, p {
-  color: #333;
+  color: #f2f2f2;
 }
 
 h2 {
-  border-bottom: .05rem solid #333;
+  border-bottom: .05rem solid #f2f2f2;
 }
 
-.logo {
+.logo-wrapper {
   height: 126px;
   width: 126px;
 }
 
-.logo .portrait {
+.logo-wrapper .portrait {
   opacity: 0;
 }
 
-.logo:hover .portrait{
+.logo-wrapper:hover .portrait{
   opacity: 1;
 }
 
@@ -49,7 +52,7 @@ a:hover svg{
 }
 
 a svg {
-  fill: #333;
+  fill: #f2f2f2;
 }
 
 a {

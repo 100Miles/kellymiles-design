@@ -18,6 +18,11 @@ html {
   box-sizing: inherit;
 }
 
+.grid {
+  transform: translateX(-50%);
+  top: 50%;
+}
+
 h1, h2, p {
   color: #333;
 }
